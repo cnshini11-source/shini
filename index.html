@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- SEO & Social Sharing -->
+    <title>Shini Deep Sleep Pro | הפתרון לנחירות ושינה עמוקה</title>
+    <meta name="description" content="ערכת השינה המהפכנית הכוללת מכשיר חכם למניעת נחירות, כיסוי עיניים 3D ופותחי נשימה. לשינה שקטה ועמוקה מהלילה הראשון. משלוח חינם עד הבית." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shini-sleep.co.il/" />
+    <meta property="og:title" content="Shini Deep Sleep Pro | לישון בשקט, לחיות טוב." />
+    <meta property="og:description" content="הפסיקו לנחור והתחילו לישון. הערכה המלאה לשינה איכותית עכשיו במבצע השקה." />
+    <meta property="og:image" content="https://i.imgur.com/R4A8pSJ.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="he_IL" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shini Deep Sleep Pro | סוף לנחירות" />
+    <meta name="twitter:description" content="ערכת השינה המלאה שתשנה לכם את הלילה. נסו עכשיו." />
+    <meta name="twitter:image" content="https://i.imgur.com/R4A8pSJ.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: none; /* Prevents bounce effect on Mac/iOS */
+      }
+      body {
+        font-family: 'Heebo', sans-serif;
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden;
+        width: 100%;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* Native CSS Animations - GPU Accelerated */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes slideInRight {
+        from { opacity: 0; transform: translateX(30px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+
+      @keyframes scan {
+        0% { top: 0%; opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { top: 100%; opacity: 0; }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+
+      .animate-slide-up {
+        animation: slideUp 0.6s ease-out forwards;
+        opacity: 0;
+      }
+      
+      .animate-slide-in-right {
+        animation: slideInRight 0.8s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-scan {
+        animation: scan 4s linear infinite;
+        will-change: top, opacity;
+      }
+
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+
+      .gpu-layer {
+        transform: translateZ(0);
+        will-change: transform, opacity;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        background-color: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #C5A059;
+      }
+
+      /* Utilities */
+      .text-gold { color: #C5A059; }
+      .gradient-gold {
+        background: linear-gradient(135deg, #C5A059 0%, #E6C88B 50%, #C5A059 100%);
+      }
+      .text-gradient-gold {
+        background: linear-gradient(135deg, #C5A059 0%, #E6C88B 50%, #C5A059 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Hide Scrollbar for Carousels */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Accessibility Helpers */
+      .a11y-large-text { font-size: 110%; }
+      .a11y-xl-text { font-size: 125%; }
+      .a11y-contrast { filter: contrast(175%); }
+      .a11y-grayscale { filter: grayscale(100%); }
+      .a11y-links a { text-decoration: underline !important; text-decoration-color: #ffff00 !important; }
+      .a11y-no-motion *, .a11y-no-motion body { animation: none !important; transition: none !important; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.559.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/shini/assets/index-D28ASGYj.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
