@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl" class="scroll-smooth">
   <head>
-     <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -9,7 +9,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T6VKCSPV');</script>
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- PERFORMANCE: Preconnect to Image CDN -->
+    <link rel="preconnect" href="https://i.imgur.com" crossorigin />
+    <link rel="dns-prefetch" href="https://i.imgur.com" />
+    
+    <!-- PERFORMANCE: Preload Hero Image (LCP) -->
+    <link rel="preload" as="image" href="https://i.imgur.com/R4A8pSJ.png" fetchpriority="high" />
+
+    <!-- FAVICONS - FORCING CANONICAL LOGO -->
+    <link rel="icon" href="https://i.imgur.com/jXZLAcX.jpeg" />
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="https://i.imgur.com/jXZLAcX.jpeg" />
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="https://i.imgur.com/jXZLAcX.jpeg" />
+    <link rel="icon" type="image/jpeg" sizes="48x48" href="https://i.imgur.com/jXZLAcX.jpeg" />
+    <link rel="icon" type="image/jpeg" sizes="192x192" href="https://i.imgur.com/jXZLAcX.jpeg" />
+    <link rel="apple-touch-icon" href="https://i.imgur.com/jXZLAcX.jpeg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     
     <!-- SEO & Social Sharing -->
@@ -18,26 +33,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="theme-color" content="#000000" />
     <meta name="robots" content="index, follow" />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - FORCING CANONICAL LOGO -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Shini Deep Sleep Pro" />
     <meta property="og:url" content="https://shini-sleep.co.il/" />
     <meta property="og:title" content="Shini Deep Sleep Pro | לישון בשקט, להתעורר רעננים." />
     <meta property="og:description" content="הפסיקו לנחור והתחילו לחיות. טכנולוגיית EMS מתקדמת לשינה מושלמת. עכשיו במבצע השקה מיוחד." />
-    <meta property="og:image" content="https://i.imgur.com/R4A8pSJ.png" />
+    <meta property="og:image" content="https://i.imgur.com/jXZLAcX.jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="he_IL" />
 
-    <!-- Twitter -->
+    <!-- Twitter - FORCING CANONICAL LOGO -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Shini Deep Sleep Pro | הפתרון לנחירות" />
     <meta name="twitter:description" content="ערכת השינה המלאה שתשנה לכם את הלילה. נסו עכשיו." />
-    <meta name="twitter:image" content="https://i.imgur.com/R4A8pSJ.png" />
+    <meta name="twitter:image" content="https://i.imgur.com/jXZLAcX.jpeg" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Organization Schema - CANONICAL SOURCE OF TRUTH -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Shini Deep Sleep Pro",
+      "url": "https://shini-sleep.co.il/",
+      "logo": "https://i.imgur.com/jXZLAcX.jpeg",
+      "image": "https://i.imgur.com/jXZLAcX.jpeg"
+    }
+    </script>
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -55,7 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       /* Native CSS Animations - GPU Accelerated */
       @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
       @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-      @keyframes slideInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes slideInRight { from { opacity: 0; transform: translateY(0); } to { opacity: 1; transform: translateY(0); } }
       @keyframes scan {
         0% { top: 0%; opacity: 0; }
         10% { opacity: 1; }
@@ -65,7 +94,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
       .animate-slide-up { animation: slideUp 0.6s ease-out forwards; opacity: 0; }
-      .animate-slide-in-right { animation: slideInRight 0.8s ease-out forwards; opacity: 0; }
       .animate-scan { animation: scan 4s linear infinite; will-change: top, opacity; }
 
       .delay-100 { animation-delay: 100ms; }
@@ -85,27 +113,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
-      /* Accessibility */
-      .a11y-large-text { font-size: 110%; }
-      .a11y-xl-text { font-size: 125%; }
-      .a11y-contrast { filter: contrast(175%); }
-      .a11y-grayscale { filter: grayscale(100%); }
-      .a11y-links a { text-decoration: underline !important; font-weight: bold; }
-      .a11y-font, .a11y-font * { font-family: Arial, sans-serif !important; }
+      .gpu-layer { transform: translateZ(0); }
     </style>
 
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.559.0"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
   }
 }
 </script>
-  <script type="module" crossorigin src="/shini/assets/index-CkRJkgAI.js"></script>
+  <script type="module" crossorigin src="/shini/assets/index-B-mwGXsM.js"></script>
 </head>
   <body><!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6VKCSPV"
